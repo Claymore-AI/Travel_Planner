@@ -5,7 +5,7 @@ from fastapi import HTTPException
 import httpx
 
 from src.models.project_place import ProjectPlace
-from src.schemas.request.project_place import ProjectPlaceCreate
+from src.schemas.request.project_place import ProjectPlaceCreate, PlaceUpdate
 from src.service.project_palce.repositories.project_place_repository import PlaceRepository
 from src.service.travel_project.repositories.travel_project_repository import ProjectRepository
 

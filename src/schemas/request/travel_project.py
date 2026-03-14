@@ -9,7 +9,7 @@ class TravelProjectCreate(BaseModel):
     name: str
     description: Optional[str] = None
     start_date: Optional[date] = None
-    places: Optional[conlist(ProjectPlaceCreate, min_items=1, max_items=10)] = []
+    places: Optional[conlist(ProjectPlaceCreate, min_length=1, max_length=10)] = []
 
 class ProjectUpdate(BaseModel):
     name: Optional[str] = None
