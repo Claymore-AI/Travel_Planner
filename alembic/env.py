@@ -7,7 +7,7 @@ from alembic import context
 
 from src.config.config import settings
 from src.database.base import Base
-
+from src.models import project_place, travel_project
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.
 config = context.config
