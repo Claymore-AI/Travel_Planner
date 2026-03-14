@@ -99,6 +99,9 @@ src/
 # Install dependencies
 pip install -r requirements.txt
 
+# create database
+alembic upgrade head
+
 # Start the server
 uvicorn src.main:app --reload
 
